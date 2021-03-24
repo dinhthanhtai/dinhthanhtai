@@ -1,5 +1,7 @@
 ### Hi there 👋
-
+![](https://komarev.com/ghpvc/?username=dinhthanhtai&color=green)
+![](https://komarev.com/ghpvc/?username=dinhthanhtai&style=flat-square)
+![](https://komarev.com/ghpvc/?username=dinhthanhtai&label=PROFILE+VIEWS)
 <!--
 **dinhthanhtai/dinhthanhtai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
