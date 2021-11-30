@@ -3,11 +3,11 @@
 ![](https://komarev.com/ghpvc/?username=dinhthanhtai&style=flat-square)
 ![](https://komarev.com/ghpvc/?username=dinhthanhtai&label=PROFILE+VIEWS)
 
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=kunuit)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=dinhthanhtai)
 [![Linkedin Badge](https://img.shields.io/badge/ThanhTai-blue?style=social&logo=Linkedin&logoColor=blue&link=https://www.linkedin.com/in/c%C6%B0%E1%BB%9Dng-v%C5%A9-xu%C3%A2n-9218141aa/)](https://www.linkedin.com/in/thanhtaidev/)
 
-![Duo Li's github stats](https://github-readme-stats.vercel.app/api?username=kunuit&show_icons=true&theme=cobalt)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kunuit&layout=compact&theme=cobalt)
+![Duo Li's github stats](https://github-readme-stats.vercel.app/api?username=dinhthanhtai&show_icons=true&theme=cobalt)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=dinhthanhtai&layout=compact&theme=cobalt)
 
 <!--
 
