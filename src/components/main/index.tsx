@@ -59,7 +59,8 @@ const Main: React.FC = () => {
                         <h2 className='section-title'> Profile </h2>
                     
                         <p className='profile__description'>
-                        Have 1 year of experience in Web Development. Proficient in HTML, CSS, and Javascript; plus modern libraries and frameworks. Programming knowledge is enhanced by constant research and professional development. Ability to work well under stress and with short deadlines. Enjoys being part of a productive team, equally comfortable working on their own initiative.
+                        Have 1 year of experience in Web Development. Proficient in HTML, CSS, and Javascript; plus modern libraries and frameworks. 
+                        Programming knowledge is enhanced by constant research and professional development. Ability to work well under stress and with short deadlines. Enjoys being part of a productive team, equally comfortable working on their own initiative.
                         </p>
                     </section>
 
@@ -106,6 +107,10 @@ const Main: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                    </section>
+
+                    <section className='skills section' id='skills'>
+                        <h2 className='section-title' > Skill </h2>
                     </section>
                 </div>
                 <div className="resume__right">
