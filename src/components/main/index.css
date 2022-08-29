@@ -88,15 +88,18 @@
 }
 
 /* EDUCATION AND EXPERIENCE  */
-.education__content {
+.education__content,
+.experience__content {
     display: flex;
 }
 
-.education__time {
+.education__time,
+.experience__time {
     padding-right: 1rem;
 }
 
-.education__rounder {
+.education__rounder,
+.experience__rounder {
     position: relative;
     display: block;
     width: 16px;
@@ -106,7 +109,8 @@
     margin-top: .25rem;
 }
 
-.education__line {
+.education__line,
+.experience__line {
     display: block;
     width: 2px;
     height: 110%;
@@ -129,4 +133,70 @@
 
 .education__year {
     font-size: var(--smaller-font-size);
+}
+
+/* SKILL AND LANGUAGES  */
+.skills__content,
+.languages__content {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills__content {
+    gap: 0;
+}
+
+.skills__name {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+}
+
+.skills__circle,
+.languages__circle {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: .75rem;
+}
+
+.certificate__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+/* REFERENCES */
+.references__content {
+    gap: .25rem;
+}
+
+.references__subtitle {
+    color: var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact {
+    font-size: var(--small-font-size);
+}
+
+.references__title {
+    font-size: var(--h3-font-size);
+}
+
+.interests__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--mb-2);
+}
+
+.interests__content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests__icon {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
 }
