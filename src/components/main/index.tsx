@@ -232,6 +232,11 @@ const Main: React.FC = () => {
                             </div>
                         </div>
                     </section>
+
+                    <a href='#' className='scrollTop' id='scroll-top'>
+                        <i className='bx bx-up-arrow-alt scrollTop__icon'></i>
+                    </a>
+
                 </div>
             </div>
         </main>
