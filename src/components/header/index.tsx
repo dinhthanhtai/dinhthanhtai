@@ -28,14 +28,14 @@ const navList = [
     },
     {
       title: 'Certificates',
-      href: 'certificate',
+      href: 'certificates',
       icon: 'bx bx-award'
     },
-    {
-      title: 'References',
-      href: 'references',
-      icon: 'bx bx-link-external'
-    },
+    // {
+    //   title: 'References',
+    //   href: 'references',
+    //   icon: 'bx bx-link-external'
+    // },
   ]
 
 const Header: React.FC = () => {
