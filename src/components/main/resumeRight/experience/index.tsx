@@ -68,26 +68,26 @@ const Experience: React.FC = () => {
                                     <h3 className='experience__title'> {company} </h3>
                                     <span className='experience__company'> {time} | <i> {title} </i> </span>
                                     <div className='experience__description'> 
-                                        <ol className="experience__projects" type="1">
+                                        <ul className="experience__projects">
                                             {
                                                 projects.map((project, index) => {
                                                     const { name, role, teamSize, technology} = project;
 
                                                     return (
-                                                        <li key={name} style={{listStyle: 'decimal inside'}} className='bb-3'>
+                                                        <li key={name} className='mb-4'>
                                                             <span className="font-bold italic">
-                                                                {name}
+                                                                {`${index + 1}. ${name}`}
                                                             </span>
-                                                            <ul className='pl-2'>
-                                                                <li className="experience__project"> <span className="font-medium"> Technology: </span> <span className="text-sm"> {technology} </span></li>
-                                                                <li className="experience__project"> <span className="font-medium"> Team-size: </span> <span className="text-sm"> {teamSize} </span></li>
-                                                                <li className="experience__project"> <span className="font-medium"> Role: </span> <span className="text-sm"> {role} </span></li>
+                                                            <ul className='pl-2 grid gap-1.5'>
+                                                                <li className="experience__project mt-1"> <span className="font-medium"> Technology: </span> <span className="experience__desc"> {technology} </span></li>
+                                                                <li className="experience__project"> <span className="font-medium"> Team-size: </span> <span className="experience__desc"> {teamSize} </span></li>
+                                                                <li className="experience__project"> <span className="font-medium"> Role: </span> <span className="experience__desc"> {role} </span></li>
                                                             </ul>
                                                         </li>
                                                     )
                                                 })
                                             }                               
-                                        </ol>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

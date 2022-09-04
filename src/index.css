@@ -244,10 +244,14 @@ img {
     }
 
     .skills__content {
-        grid-template-columns: .3fr 1fr;
+        grid-template-columns: 0.2fr 1fr;
     }
 
     .skills__name {
         align-items: flex-start;
+    }
+
+    .skills_desc {
+        font-size: var(--small-font-size);
     }
 }

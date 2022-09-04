@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
 import avatar from '../../../assets/avatar.jpg';
+import Certificate from '../resumeRight/certificate';
 import Interests from '../resumeRight/interests';
+import Languages from '../resumeRight/languagues';
 import Education from './education';
 import Profile from './profile';
 import Skills from './skills';
@@ -85,17 +87,18 @@ const ResumeLeft: React.FC<Props> = ({ onPrintPDF }) => {
                 onClick={onToggleTheme} 
                 className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
             />
-            {/* <i 
+            <i 
                 id='resume-button'
                 title='Generate PDF' 
                 onClick={onPrintPDF}
                 className='bx bx-download generate-pdf' 
-            /> */}
+            />
         </section>
 
         <Social />
         <Profile />
         <Education /> 
+        <Certificate />
         {
             isSkill ? <Skills /> : <Interests /> 
         }

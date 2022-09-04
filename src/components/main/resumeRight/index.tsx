@@ -36,8 +36,7 @@ const ResumeRight: React.FC = () => {
         <div className="resume__right">
             <Experience />
             {!isInterests && <SkillsDetail/>}
-            <Certificate />
-            <Languages />
+            {/* <Certificate /> */}
             {isInterests && <Interests/>}
             <a href='#' className={`scrollTop ${isScroll && 'show-scroll'}`} id='scroll-top'>
                 <i className='bx bx-up-arrow-alt scrollTop__icon'></i>

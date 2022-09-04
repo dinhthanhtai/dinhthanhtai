@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-// import html2pdf from 'html2pdf-jspdf2';
+import html2pdf from 'html2pdf-jspdf2';
 
 import ResumeLeft from './resumeLeft';
 import ResumeRight from './resumeRight';
@@ -25,7 +25,7 @@ const Main: React.FC = () => {
       }),[resume]) 
 
     const handlePrintPDF = () => {
-        // html2pdf(resume, opt)
+        html2pdf(resume, opt)
     }
 
     return (

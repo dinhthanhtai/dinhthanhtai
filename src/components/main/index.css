@@ -118,6 +118,10 @@
     transform: translate(7px, 0);
 }
 
+.education__line {
+    height: 110%;
+}
+
 .education__data {
     gap: .5rem;
 }
@@ -137,6 +141,10 @@
 
 .experience__project {
     list-style: disc inside url('../../assets/arrow-right-smallest-bk.png')!important;
+}
+
+.experience__desc {
+    font-size: var(--small-font-size);
 }
 
 /* SKILL AND LANGUAGES  */
@@ -277,8 +285,8 @@ body.scale-cv {
     --smaller-font-size: .688rem;
 }
 
-.scale-cv .change-theme, 
-.scale-cv .generate-pdf {
+.scale-cv .change-theme {
+/* .scale-cv .generate-pdf { */
     display: none;
 }
 
@@ -287,7 +295,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-    padding: 1.5rem 0 0.8rem;
+    padding: 1rem 0 0.8rem;
 }
 
 .scale-cv .section-title {
@@ -300,12 +308,13 @@ body.scale-cv {
 } 
 
 .scale-cv .home__img {
-    width: 90px;
-    height: 90px;
+    /* display: none; */
+    width: 55px;
+    height: 55px;
 }
 
 .scale-cv .home__container {
-    gap: 1.5rem;
+    gap: .5rem;
 }
 
 .scale-cv .home__data {
@@ -315,4 +324,76 @@ body.scale-cv {
 .scale-cv .home__address, 
 .scale-cv .social__container {
     gap: 0.75rem;
+}
+
+.scale-cv .home__icon,
+.scale-cv .social__icon,
+.scale-cv .interests__icon {
+    font-size: 1rem;
+}
+
+.scale-cv .education__container,
+.scale-cv .experience__container,
+.scale-cv .certificate__container {
+    gap: 1rem;
+}
+
+.scale-cv .education__time,
+.scale-cv .experience__time {
+    padding-right: .5rem;
+    transform: translateY(9px);
+}
+
+.scale-cv .education__rounder,
+.scale-cv .experience__rounder {
+    width: 11px;
+    height: 11px;
+    margin-top: .22rem;
+}
+
+.scale-cv .education__line,
+.scale-cv .experience__line {
+    width: 1px;
+    height: 100%;
+    transform: translate(5px, 0);
+}
+
+.scale-cv .education__line {
+    height: 110%;
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data {
+    gap: .25rem;
+}
+
+.scale-cv .experience__project {
+    list-style: none!important;
+}
+
+.scale-cv .experience__project ul {
+    gap: 0;
+}
+
+.scale-cv .skills__name {
+    margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container {
+    column-gap: 2.5rem;
+    row-gap: 0.5rem;
+}
+
+.scale-cv .skills__content {
+    grid-template-columns: 0fr 1fr;
+    gap: 0.5rem;
+    column-gap: 1.5rem;
+}
+
+.scale-cv .skills__content li {
+    margin-bottom: 2px;
+}
+
+.scale-cv .certificate__title {
+    font-size: var(--normal-font-size);
 }

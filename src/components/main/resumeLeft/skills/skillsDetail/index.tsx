@@ -46,7 +46,7 @@ const SkillsDetail: React.FC = () => {
                                     <ul>
                                         {
                                             details.map(detail => (
-                                                <li key={detail} className='text-sm'> {`- ${detail}`} </li>
+                                                <li className="mb-2" key={detail}> {`- ${detail}`} </li>
                                             ))
                                         }
                                     </ul>
