@@ -33,9 +33,9 @@ const experiences: IExperience[] = [
         ]
     },
     {
-        company: 'GitGam',
+        company: 'GitGam - Company',
         time: 'Mar 2021 - Dec 2021',
-        title: 'Front-End Develope',
+        title: 'Front-End Develop',
         projects: [
             {
                 name: 'Enterprise management software WebApp',
@@ -70,11 +70,11 @@ const Experience: React.FC = () => {
                                     <div className='experience__description'> 
                                         <ol className="experience__projects" type="1">
                                             {
-                                                projects.map(project => {
+                                                projects.map((project, index) => {
                                                     const { name, role, teamSize, technology} = project;
 
                                                     return (
-                                                        <li key={name} style={{listStyle: 'decimal inside'}} className='mb-3'>
+                                                        <li key={name} style={{listStyle: 'decimal inside'}} className='bb-3'>
                                                             <span className="font-bold italic">
                                                                 {name}
                                                             </span>

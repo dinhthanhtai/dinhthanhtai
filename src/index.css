@@ -185,3 +185,69 @@ img {
     color: var(--title-color);
     font-size: .9rem;
 }
+
+/* MEDIA QUERIES  */
+@media screen and (max-width: 320px) {
+    .nav__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem .5rem;
+    }
+}
+
+@media screen and (min-width: 968px) {
+    body {
+        margin: 3rem 0;
+    }
+    
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .l-header,
+    .scrollTop {
+        display: none;
+    }
+
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+        box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+    }
+
+    .resume__left {
+        background-color: var(--container-color-alt);
+    }
+
+    .resume__left, 
+    .resume__right {
+        padding: 0 1.5rem;
+    }
+
+    .section-title, 
+    .profile__description {
+        text-align: initial;
+    }
+
+    .home__container {
+        gap: 1.5rem; 
+    }
+
+    .home__button-movil {
+        display: none;
+    }
+
+    .interests__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .skills__content {
+        grid-template-columns: .3fr 1fr;
+    }
+
+    .skills__name {
+        align-items: flex-start;
+    }
+}

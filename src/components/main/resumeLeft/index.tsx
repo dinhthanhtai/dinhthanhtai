@@ -1,10 +1,52 @@
+import { useEffect, useState } from 'react';
+
 import avatar from '../../../assets/avatar.jpg';
+import Interests from '../resumeRight/interests';
 import Education from './education';
 import Profile from './profile';
 import Skills from './skills';
 import Social from './social';
 
-const ResumeLeft: React.FC = () => {
+interface Props {
+    onPrintPDF: () => void;
+}
+
+const ResumeLeft: React.FC<Props> = ({ onPrintPDF }) => {
+    const selectedTheme = localStorage.getItem('theme');
+    const getCurrentTheme = document.body.classList.contains('dark-theme')
+
+    const [isSkill, setIsSkill] = useState(false);
+    const [isDark, setIsDark] = useState(() => {
+        return selectedTheme === 'dark' && getCurrentTheme
+    });
+
+    
+    useEffect(() => {
+        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme');
+        if (!selectedTheme) {
+            localStorage.setItem('theme', 'light');
+        }
+    }, [])
+    
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            if (window.screen.width <= 968) {
+                setIsSkill(true)
+            } else {
+                setIsSkill(false);
+            }
+        })
+    }, [window.screen.width])
+
+    const onToggleTheme = () => {
+        document.body.classList[isDark ? 'remove' : 'add']('dark-theme');
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+        setIsDark(!isDark);
+    }
+
+    useEffect(() => {
+        
+    }, [])
     return (
         <div className="resume__left">
         <section className="home" id="home">
@@ -16,7 +58,7 @@ const ResumeLeft: React.FC = () => {
                         DINH THANH TAI
                     </h1>
                     <h3 className="home__profession">
-                        Web developer
+                        Web Developer
                     </h3>
 
                     <div>
@@ -36,12 +78,27 @@ const ResumeLeft: React.FC = () => {
                     </span>
                 </div>
             </div>
+
+            <i 
+                title='Theme' 
+                id='theme-button'
+                onClick={onToggleTheme} 
+                className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
+            />
+            {/* <i 
+                id='resume-button'
+                title='Generate PDF' 
+                onClick={onPrintPDF}
+                className='bx bx-download generate-pdf' 
+            /> */}
         </section>
 
         <Social />
         <Profile />
-        <Education />
-        <Skills />
+        <Education /> 
+        {
+            isSkill ? <Skills /> : <Interests /> 
+        }
     </div>
     )
 };
