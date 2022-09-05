@@ -122,8 +122,9 @@
     height: 110%;
 }
 
-.education__data {
-    gap: .5rem;
+.education__data,
+.experience__data {
+    gap: .5rem!important;
 }
 
 .education__title {
@@ -155,6 +156,10 @@
 
 .skills__content {
     gap: 0;
+}
+
+.skills__content li {
+    font-size: var(--small-font-size);
 }
 
 .skills__name {
@@ -394,7 +399,6 @@ body.scale-cv {
 }
 
 .scale-cv .skills__content li {
-    font-size: var(--small-font-size);
     margin-bottom: 2px;
 }
 
