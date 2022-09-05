@@ -20,7 +20,7 @@ const DetailSkills: DetailSkill[] = [
     },
     {
         name: 'React JS',
-        details: ['Have knowledge about ReactJS Basic & Advanced.', 'Atomic Design Pattern.', ' Have experience building React cI Core Component, React Library.', 'React\'s Ecosystem: React Router, Redux, Storybook, NextJS...']
+        details: ['Have knowledge about ReactJS Basic & Advanced.', 'Atomic Design Pattern.', ' Have experience building React UI Core Component, React Library.', 'React\'s Ecosystem: React Router, Redux, Storybook, NextJS...']
     },
     {
         name: 'Tools',
