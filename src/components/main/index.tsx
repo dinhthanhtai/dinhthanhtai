@@ -11,7 +11,6 @@ const Main: React.FC = () => {
     const [resume, setResume] = useState<HTMLDivElement>();
     const [isScale, setIsScale] = useState<boolean>(false);
     const generatePDF = useRef<HTMLAnchorElement | null>(null);
-    console.log("🚀 ~ file: index.tsx ~ line 13 ~ generatePDF", generatePDF)
     
 
     useEffect(() => {

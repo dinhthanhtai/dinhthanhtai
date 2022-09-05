@@ -394,6 +394,7 @@ body.scale-cv {
 }
 
 .scale-cv .skills__content li {
+    font-size: var(--small-font-size);
     margin-bottom: 2px;
 }
 
