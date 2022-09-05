@@ -8,7 +8,11 @@ import Interests from "./interests";
 import Languages from "./languagues";
 import References from "./references";
 
-const ResumeRight: React.FC = () => {
+interface Props {
+    isScale: boolean;
+}
+
+const ResumeRight: React.FC<Props> = ({ isScale }) => {
     const [isScroll, setIsScroll] = useState(false);
     const [isInterests, setIsInterests] = useState(false);
 
@@ -36,7 +40,7 @@ const ResumeRight: React.FC = () => {
         <div className="resume__right">
             <Experience />
             {!isInterests && <SkillsDetail/>}
-            {/* <Certificate /> */}
+            {!isScale && <Certificate />}
             {isInterests && <Interests/>}
             <a href='#' className={`scrollTop ${isScroll && 'show-scroll'}`} id='scroll-top'>
                 <i className='bx bx-up-arrow-alt scrollTop__icon'></i>

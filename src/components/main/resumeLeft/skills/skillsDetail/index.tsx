@@ -23,7 +23,7 @@ const DetailSkills: DetailSkill[] = [
         details: ['Have knowledge about ReactJS Basic & Advanced.', 'Atomic Design Pattern.', ' Have experience building React cI Core Component, React Library.', 'React\'s Ecosystem: React Router, Redux, Storybook, NextJS...']
     },
     {
-        name: 'TOOLS',
+        name: 'Tools',
         details: ['Have knowledge about configuring & optimizing Webpack, plugin.', 'Other tools: ViteJs']
     }
 ]
@@ -33,12 +33,12 @@ const SkillsDetail: React.FC = () => {
         <section className='skills section' id='skills'>
             <h2 className='section-title' > Skill </h2>
 
-            <div className='skills__content bd-grid'>
+            <div className=''>
                 {
                     DetailSkills.map(skill => {
                         const {name, details} = skill;
                         return (
-                            <React.Fragment key={name}>
+                            <div className="skills__content bd-grid" key={name}>
                                 <h2 className='skills__name'>
                                     {name}
                                 </h2>
@@ -51,11 +51,10 @@ const SkillsDetail: React.FC = () => {
                                         }
                                     </ul>
                                 </div>
-                            </React.Fragment>
+                            </div>
                         )
                     })
-                }
-               
+                }          
             </div>
         </section>
     )

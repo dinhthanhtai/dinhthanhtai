@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, forwardRef } from 'react';
 
 import avatar from '../../../assets/avatar.jpg';
 import Certificate from '../resumeRight/certificate';
@@ -11,9 +11,10 @@ import Social from './social';
 
 interface Props {
     onPrintPDF: () => void;
+    isScale: boolean;
 }
 
-const ResumeLeft: React.FC<Props> = ({ onPrintPDF }) => {
+const ResumeLeft = forwardRef<HTMLAnchorElement, Props>(({ onPrintPDF, isScale }, ref) => {
     const selectedTheme = localStorage.getItem('theme');
     const getCurrentTheme = document.body.classList.contains('dark-theme')
 
@@ -46,9 +47,6 @@ const ResumeLeft: React.FC<Props> = ({ onPrintPDF }) => {
         setIsDark(!isDark);
     }
 
-    useEffect(() => {
-        
-    }, [])
     return (
         <div className="resume__left">
         <section className="home" id="home">
@@ -87,23 +85,28 @@ const ResumeLeft: React.FC<Props> = ({ onPrintPDF }) => {
                 onClick={onToggleTheme} 
                 className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
             />
-            <i 
-                id='resume-button'
-                title='Generate PDF' 
-                onClick={onPrintPDF}
-                className='bx bx-download generate-pdf' 
-            />
+            <a ref={ref} download>
+                <i
+                    id='resume-button'
+                    title='Generate PDF' 
+                    onClick={onPrintPDF}
+                    className='bx bx-download generate-pdf' 
+                />
+            </a>
         </section>
 
         <Social />
         <Profile />
-        <Education /> 
-        <Certificate />
+        <Education />
+        {
+            isScale && <Certificate />
+        }
+        <Languages />
         {
             isSkill ? <Skills /> : <Interests /> 
         }
     </div>
     )
-};
+});
 
 export default ResumeLeft;
