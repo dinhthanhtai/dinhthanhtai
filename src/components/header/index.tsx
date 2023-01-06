@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import './index.scss';
+
 const navList = [
     {
       title: 'Home',
@@ -31,11 +33,6 @@ const navList = [
       href: 'certificates',
       icon: 'bx bx-award'
     },
-    // {
-    //   title: 'References',
-    //   href: 'references',
-    //   icon: 'bx bx-link-external'
-    // },
   ]
 
 const Header: React.FC = () => {
@@ -65,7 +62,6 @@ const Header: React.FC = () => {
           }
           </ul>
           </div>
-       
   
           <div onClick={() => setToggle(!toggle)} className="nav__toggle cursor-pointer text-xl" id="nav-toggle">
             <i className='bx bx-grid-alt'></i>

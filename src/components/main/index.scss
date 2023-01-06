@@ -1,90 +1,67 @@
 /* Home */
 .home {
     position: relative;
-}
 
-.home__container {
-    gap: 3rem;
-}
+    &__container {
+        gap: 3rem;
+    }
 
-.home__data {
-    gap: .5rem;
-    text-align: center;
-}
+    &__data {
+        gap: .5rem;
+        text-align: center;
+    }
 
-.home__img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    justify-self: center;
-    margin-bottom: var(--mb-1);
-}
+    &__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        justify-self: center;
+        margin-bottom: var(--mb-1);
+    }
 
-.home__title {
-    font-size: var(--h1-font-size);
-}
+    &__title {
+        font-size: var(--h1-font-size);
+    }
 
-.home__profession {
-    font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-1);
-}
+    &__profession {
+        font-size: var(--normal-font-size);
+        margin-bottom: var(--mb-1);
+    }
 
-.home__address {
-    gap: 1rem;
-}
+    &__address {
+        gap: 1rem;
+    }
 
-.home__information {
-    display: flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-}
+    &__information {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        font-size: var(--small-font-size);
 
-.home__icon {
-    font-size: 1.2rem;
-    margin-right: .25rem;
-}
+        &:hover {
+            color: var(--title-color);
+        }
+    }
 
-.home__button-movil {
-    display: inline-block;
-    border: 2px solid var(--text-color);
-    color: var(--title-color);
-    padding: 1rem 2rem;
-    border-radius: 0.25rem;
-    transition: 0.3s;
-    font-weight: var(--font-medium);
-    /* margin-top: var(--mb-3); */
-}
+    &__icon {
+        font-size: 1.2rem;
+        margin-right: .25rem;
+    }
 
-.home__button-movil:hover {
-    background-color: var(--text-color);
-    color: var(--container-color)
-}
+    &__button-movil {
+        display: inline-block;
+        border: 2px solid var(--text-color);
+        color: var(--title-color);
+        padding: 1rem 2rem;
+        border-radius: 0.25rem;
+        transition: 0.3s;
+        font-weight: var(--font-medium);
 
-/* SOCIAL */
-.social__container {
-    grid-template-columns: max-content;
-    gap: 1rem;
-}
-
-.social__link {
-    display: inline-flex;
-    align-items: center;
-    font-size: var(--small-font-size);
-    color: var(--text-color);
-}
-
-.social__link:hover {
-    color: var(--title-color);
-}
-
-.social__icon {
-    font-size: 1.2rem;
-    margin-right: 0.25rem;
-}
-
-/* Profile */
-.profile__description {
-    text-align: center;
+        &:hover {
+            background-color: var(--text-color);
+            color: var(--container-color)
+        }
+    }
 }
 
 /* EDUCATION AND EXPERIENCE  */
@@ -183,80 +160,6 @@
     margin-bottom: var(--mb-1);
     font-size: 1rem;
     font-weight: bold;
-}
-
-/* REFERENCES */
-.references__content {
-    gap: .25rem;
-}
-
-.references__subtitle {
-    color: var(--text-color-light);
-}
-
-.references__subtitle,
-.references__contact {
-    font-size: var(--small-font-size);
-}
-
-.references__title {
-    font-size: var(--h3-font-size);
-}
-
-.interests__container {
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: var(--mb-2);
-}
-
-.interests__content {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-}
-
-.interests__icon {
-    font-size: 1.5rem;
-    color: var(--text-color-light);
-    margin-bottom: .25rem;
-}
-
-/* Scroll top */
-.scrollTop {
-    position: fixed;
-    right: 1rem;
-    bottom: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .3rem;
-    background-color: var(--container-color-alt);
-    border-radius: .4rem;
-    transition: .3s;
-    visibility: hidden;
-}
-
-.scrollTop__icon {
-    font-size: 1.2rem;
-    color: var(--text-color);
-}
-
-.show-scroll {
-    visibility: visible;
-    bottom: 5rem;
-}
-
-/* Button Dark/ Light */
-.change-theme {
-    position: absolute;
-    right: 0;
-    top: 2.2rem;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.change-theme:hover {
-    color: var(--title-color);
 }
 
 body.dark-theme {

@@ -5,7 +5,7 @@ import ResumeLeft from './resumeLeft';
 import ResumeRight from './resumeRight';
 import DINH_THANH_TAI_CV from '../../assets/DINH_THANH_TAI_CV.pdf';
 
-import './index.css';
+import './index.scss';
 
 const Main: React.FC = () => {
     const [resume, setResume] = useState<HTMLDivElement>();

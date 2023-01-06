@@ -1,4 +1,8 @@
-const Social = () => {
+import { FC } from 'react';
+
+import './index.scss';
+
+const Social: FC = () => {
     return (
         <section className='social section'>
             <h2 className='section-title'>

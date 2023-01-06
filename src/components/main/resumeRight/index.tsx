@@ -6,13 +6,13 @@ import Certificate from "./certificate";
 import Experience from "./experience";
 import Interests from "./interests";
 import Languages from "./languagues";
-import References from "./references";
+// import References from "./references";s
 
-interface Props {
+interface IProps {
     isScale: boolean;
 }
 
-const ResumeRight: React.FC<Props> = ({ isScale }) => {
+const ResumeRight: React.FC<IProps> = ({ isScale }) => {
     const [isScroll, setIsScroll] = useState(false);
     const [isInterests, setIsInterests] = useState(false);
 

@@ -9,12 +9,14 @@ import Profile from './profile';
 import Skills from './skills';
 import Social from './social';
 
-interface Props {
+import './index.scss';
+
+interface IProps {
     onPrintPDF: () => void;
     isScale: boolean;
 }
 
-const ResumeLeft = forwardRef<HTMLAnchorElement, Props>(({ onPrintPDF, isScale }, ref) => {
+const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale }, ref) => {
     const selectedTheme = localStorage.getItem('theme');
     const getCurrentTheme = document.body.classList.contains('dark-theme')
 
@@ -70,12 +72,12 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, Props>(({ onPrintPDF, isScale }
                     <span className="home__information">
                         <i className="bx bx-map home__icon"></i> Ho Chi Minh, Vietnam
                     </span>
-                    <span className="home__information">
+                    <a href="mailto: dinhthanhtai.xz@gmail.com" className="home__information">
                         <i className="bx bx-envelope home__icon"/> dinhthanhtai.xz@gmail.com
-                    </span>
-                    <span className="home__information">
+                    </a>
+                    <a href="tel:+0906517120" className="home__information">
                         <i className="bx bx-phone home__icon"></i> 0906517120
-                    </span>
+                    </a>
                 </div>
             </div>
 
