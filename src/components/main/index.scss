@@ -7,7 +7,7 @@
     }
 
     &__data {
-        gap: .5rem;
+        gap: 0.5rem;
         text-align: center;
     }
 
@@ -45,7 +45,7 @@
 
     &__icon {
         font-size: 1.2rem;
-        margin-right: .25rem;
+        margin-right: 0.25rem;
     }
 
     &__button-movil {
@@ -59,7 +59,7 @@
 
         &:hover {
             background-color: var(--text-color);
-            color: var(--container-color)
+            color: var(--container-color);
         }
     }
 }
@@ -83,7 +83,7 @@
     height: 16px;
     background-color: var(--text-color-light);
     border-radius: 50%;
-    margin-top: .25rem;
+    margin-top: 0.25rem;
 }
 
 .education__line,
@@ -101,7 +101,7 @@
 
 .education__data,
 .experience__data {
-    gap: .5rem!important;
+    gap: 0.5rem !important;
 }
 
 .education__title {
@@ -118,7 +118,7 @@
 }
 
 .experience__project {
-    list-style: disc inside url('../../assets/arrow-right-smallest-bk.png')!important;
+    list-style: disc inside url("../../assets/arrow-right-smallest-bk.png") !important;
 }
 
 .experience__desc {
@@ -152,7 +152,7 @@
     height: 5px;
     background-color: var(--text-color);
     border-radius: 50%;
-    margin-right: .75rem;
+    margin-right: 0.75rem;
 }
 
 .certificate__title {
@@ -163,8 +163,8 @@
 }
 
 body.dark-theme {
-    --title-color: #F2F2F2;
-    --text-color: #BFBFBF;
+    --title-color: #f2f2f2;
+    --text-color: #bfbfbf;
     --container-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2b2b2b;
@@ -189,8 +189,8 @@ body.scale-cv {
     --h2-font-size: 0.938rem;
     --h3-font-size: 0.875rem;
     --normal-font-size: 0.813rem;
-    --small-font-size: .75rem;
-    --smaller-font-size: .688rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.688rem;
 }
 
 .scale-cv .change-theme,
@@ -210,10 +210,10 @@ body.scale-cv {
     margin-bottom: 0.75rem;
 }
 
-.scale-cv .resume__left, 
+.scale-cv .resume__left,
 .scale-cv .resume__right {
     padding: 0 1rem;
-} 
+}
 
 .scale-cv .home__img {
     width: 55px;
@@ -221,14 +221,25 @@ body.scale-cv {
 }
 
 .scale-cv .home__container {
-    gap: .5rem;
+    gap: 0.5rem;
+}
+
+.scale-cv .bd-grid {
+    gap: 0.55rem;
+}
+
+.scale-cv .social,
+.education,
+.profile,
+.certificate {
+    padding: 0.5rem 0;
 }
 
 .scale-cv .home__data {
     gap: 0.25rem;
 }
 
-.scale-cv .home__address, 
+.scale-cv .home__address,
 .scale-cv .social__container {
     gap: 0.75rem;
 }
@@ -247,14 +258,14 @@ body.scale-cv {
 
 .scale-cv .education__time,
 .scale-cv .experience__time {
-    padding-right: .5rem;
+    padding-right: 0.5rem;
 }
 
 .scale-cv .education__rounder,
 .scale-cv .experience__rounder {
     width: 11px;
     height: 11px;
-    margin-top: .22rem;
+    margin-top: 0.22rem;
 }
 
 .scale-cv .education__line,
@@ -270,11 +281,11 @@ body.scale-cv {
 
 .scale-cv .education__data,
 .scale-cv .experience__data {
-    gap: .25rem;
+    gap: 0.25rem;
 }
 
 .scale-cv .experience__project {
-    list-style: none!important;
+    list-style: none !important;
 }
 
 .scale-cv .experience__project ul {
@@ -291,7 +302,7 @@ body.scale-cv {
 }
 
 .scale-cv .skills__content {
-    grid-template-columns: .3fr 1fr;
+    grid-template-columns: 0.3fr 1fr;
     gap: 0.5rem;
     column-gap: 1.5rem;
 }
@@ -314,7 +325,7 @@ body.scale-cv {
 }
 
 .scale-cv .languages__circle {
-    margin-right: .3rem;
+    margin-right: 0.3rem;
 }
 
 .scale-cv .languages__content {

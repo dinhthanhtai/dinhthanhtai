@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useMemo } from 'react';
 // import html2pdf from 'html2pdf-jspdf2';
 
 import ResumeLeft from './resumeLeft';
@@ -42,6 +42,9 @@ const Main: React.FC = () => {
         if (generatePDF.current) {
             generatePDF.current.href = DINH_THANH_TAI_CV;
         }
+
+        // export new version of pdf 
+        // html2pdf(resume, opt)
     }
 
     return (
