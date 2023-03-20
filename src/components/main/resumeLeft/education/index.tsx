@@ -16,18 +16,6 @@ const Education: React.FC = () => {
             <span className='education__year'> 8/2018 - 12/2022 </span>
           </div>
         </div>
-
-        <div className='education__content'>
-          <div className='education__time'>
-            <span className='education__rounder'></span>
-            <span className='education__line'></span>
-          </div>
-
-          <div className='education__data bd-grid'>
-            <h3 className='education__title'> Le Hong Phong High School </h3>
-            <span className='education__year'> 2015 - 2018 </span>
-          </div>
-        </div>
       </div>
     </section>
   );

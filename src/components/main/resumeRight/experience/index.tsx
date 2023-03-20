@@ -25,14 +25,14 @@ const experiences: IExperience[] = [
         roles: [
           'Review and improve code quality.',
           'Implement form builder and integrate with feature availability.',
-          'Maintain, refactor, and improve stability performance.',
-          'Support implement CI/CD by using Github Actions.'
+          'Maintain, refactor, and improve stability and performance.',
+          'Implement CI/CD by using Github Actions.'
         ]
       },
       {
         name: 'Shout for Good Web App',
         technology: 'React, Redux, SCSS, Jest, RX JS',
-        teamSize: 14,
+        teamSize: 12,
         roles: ['Maintain system, review and assure quality of code.',
           'Implementation Event Ticketing feature.',
           'Pick up requirement, analyze and discuss with team to finalize the expect results, and the best way to implement it.',
@@ -97,7 +97,7 @@ const Experience: React.FC = () => {
                                 <li className="experience__project">
                                   <span className="experience__project--block">
                                     <span className="font-medium"> Roles: </span>
-                                    <ul className="" style={{ lineHeight: 2, padding: '0 30px' }}>
+                                    <ul className="" style={{ lineHeight: 2, padding: '0 0 0 30px' }}>
                                       {
                                         roles.map((role: string, idx: number) => (
                                           <li key={idx}> - {role} </li>

@@ -39,9 +39,9 @@ const Main: React.FC = () => {
         }
         , 2000);
 
-        if (generatePDF.current) {
-            generatePDF.current.href = DINH_THANH_TAI_CV;
-        }
+        // if (generatePDF.current) {
+        //     generatePDF.current.href = DINH_THANH_TAI_CV;
+        // }
 
         // export new version of pdf 
         // html2pdf(resume, opt)

@@ -1,9 +1,9 @@
-import { useEffect, useState, forwardRef } from 'react';
+import { useEffect, useState, forwardRef, useLayoutEffect } from 'react';
 
 import avatar from '../../../assets/avatar.jpg';
 import Certificate from '../resumeRight/certificate';
 import Interests from '../resumeRight/interests';
-import Languages from '../resumeRight/languagues';
+import Languages from '../resumeRight/languages';
 import Education from './education';
 import Profile from './profile';
 import Skills from './skills';
@@ -18,18 +18,24 @@ interface IProps {
 
 const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale }, ref) => {
     const selectedTheme = localStorage.getItem('theme');
-    const getCurrentTheme = document.body.classList.contains('dark-theme')
+    const getCurrentTheme = document.body.classList.contains('dark-theme');
 
     const [isSkill, setIsSkill] = useState(false);
     const [isDark, setIsDark] = useState(() => {
         return selectedTheme === 'dark' && getCurrentTheme
     });
-
     
-    useEffect(() => {
-        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme');
+    useLayoutEffect(() => {
+        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+        if (isMac) {
+            document.body.classList.add('dark-theme');
+        }
+
+        const typeTheme = isMac ? 'dark' : 'light'
+
         if (!selectedTheme) {
-            localStorage.setItem('theme', 'light');
+            localStorage.setItem('theme', typeTheme );
+            setIsDark(typeTheme === 'dark');
         }
     }, [])
     
@@ -54,7 +60,7 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
         <section className="home" id="home">
             <div className="home__container section bd-grid">
                 <div className="home__data bd-grid">
-                    <img src={avatar} alt="" className="home__img"/>
+                    <img src={avatar} alt="Image Avatar" className="home__img"/>
 
                     <h1 className="home__title">
                         DINH THANH TAI
@@ -87,7 +93,7 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
                 onClick={onToggleTheme} 
                 className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
             />
-            <a ref={ref} download>
+            <a ref={ref}>
                 <i
                     id='resume-button'
                     title='Generate PDF' 
@@ -100,10 +106,8 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
         <Social />
         <Profile />
         <Education />
-        {
-            isScale && <Certificate />
-        }
         <Languages />
+        <Certificate />
         {
             isSkill ? <Skills /> : <Interests /> 
         }

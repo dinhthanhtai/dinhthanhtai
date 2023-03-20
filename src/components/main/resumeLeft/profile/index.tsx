@@ -8,10 +8,10 @@ const Profile: FC = () => {
       <h2 className='section-title'> Profile </h2>
 
       <p className='profile__description'>
-        Have 2 years of experience in Web Development.
+        - Have 2 years of experience in Web Development's
         Programming knowledge is enhanced by constant research and professional development.
-        Ability to work well under stress and with short deadlines.
-        I'm looking forward to working in a dynamic environment to contribute to the company and learn to develop myself in the future.
+        Ability to work well under stress and with short deadlines. <br />
+        - I'm looking forward to working in a dynamic environment to contribute to the company and learn to develop myself in the future.
       </p>
     </section>
   )
