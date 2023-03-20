@@ -26,7 +26,7 @@ const Main: React.FC = () => {
     //     filename:     'DINH_THANH_TAI_CV.pdf',
     //     image:        { type: 'pdf', quality: 0.98 },
     //     html2canvas:  { scale: 4 },
-    //     jsPDF:        { format: 'a4', orientation: 'p' }
+    //     jsPDF:        { format: [250, 387], orientation: 'p' }
     //   }),[resume]) 
 
     const handlePrintPDF = () => {
@@ -39,9 +39,9 @@ const Main: React.FC = () => {
         }
         , 2000);
 
-        // if (generatePDF.current) {
-        //     generatePDF.current.href = DINH_THANH_TAI_CV;
-        // }
+        if (generatePDF.current) {
+            generatePDF.current.href = DINH_THANH_TAI_CV;
+        }
 
         // export new version of pdf 
         // html2pdf(resume, opt)
@@ -49,8 +49,8 @@ const Main: React.FC = () => {
 
     return (
         <main className="l-main bd-container">
-            <div  className="resume">
-                <ResumeLeft ref={generatePDF}  isScale={isScale} onPrintPDF={handlePrintPDF} />
+            <div className="resume">
+                <ResumeLeft ref={generatePDF} onPrintPDF={handlePrintPDF} />
                 <ResumeRight isScale={isScale} />
             </div>
         </main>

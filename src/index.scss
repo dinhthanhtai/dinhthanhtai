@@ -108,23 +108,11 @@ img {
 }
 
 .l-header {
-    /* width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--z-fixed); */
     background-color: var(--body-color);
     box-shadow:  0 -1px 4px rgba(0, 0, 0, .1);
     transition: .3s;
 }
 
-/* NAV */
-.nav {
-    /* height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
 
 @media screen and (max-width: 968px) {
    .nav__menu {
@@ -144,37 +132,15 @@ img {
 .nav__logo,
 .nav__toggle {
     color: var(--text-color-light);
-    /* font-weight: var(--font-medium); */
 }
 
-.nav__toggle {
-    /* font-size: 1.2rem;
-    cursor: pointer; */
-}
-
-.nav__item {
-    /* text-align: center; */
-}
-
-.nav__list {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem; */
-}
 
 .nav__link {
-    /* display: flex;
-    flex-direction: column; */
     font-size: var(--smaller-font-size);
 }
 
 .nav__link:hover {
     color: var(--title-color);
-}
-
-.nav__icon {
-    /* font-size: 1.2rem;
-    margin-bottom: var(--mb-1); */
 }
 
 .show-menu {
@@ -228,6 +194,12 @@ img {
     .section-title,
     .profile__description {
         text-align: initial;
+    }
+
+    .profile__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
     }
 
     .home__container {

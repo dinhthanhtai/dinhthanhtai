@@ -13,10 +13,9 @@ import './index.scss';
 
 interface IProps {
     onPrintPDF: () => void;
-    isScale: boolean;
 }
 
-const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale }, ref) => {
+const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF }, ref) => {
     const selectedTheme = localStorage.getItem('theme');
     const getCurrentTheme = document.body.classList.contains('dark-theme');
 
@@ -24,8 +23,6 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
     const [isDark, setIsDark] = useState(() => {
         return selectedTheme === 'dark' && getCurrentTheme
     });
-
-    console.log(isDark);
     
     useEffect(() => {
         document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme');
@@ -96,7 +93,7 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
                 onClick={onToggleTheme} 
                 className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
             />
-            <a ref={ref}>
+            <a ref={ref} download>
                 <i
                     id='resume-button'
                     title='Generate PDF' 

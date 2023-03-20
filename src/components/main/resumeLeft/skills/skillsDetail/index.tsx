@@ -1,5 +1,3 @@
-import React from "react";
-
 interface DetailSkill {
   name: string,
   details: Array<string>
@@ -37,7 +35,7 @@ const DetailSkills: DetailSkill[] = [
   }
 ]
 
-const SkillsDetail: React.FC = () => {
+const SkillsDetail = () => {
   return (
     <section className='skills section' id='skills'>
       <h2 className='section-title' > Skill </h2>

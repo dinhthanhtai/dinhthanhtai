@@ -1,4 +1,4 @@
-const Education: React.FC = () => {
+const Education = () => {
   return (
     <section className='education section' id='education'>
       <h2 className='section-title'> Education </h2>

@@ -26,7 +26,7 @@ const experiences: IExperience[] = [
           'Review and improve code quality.',
           'Implement form builder and integrate with feature availability.',
           'Maintain, refactor, and improve stability and performance.',
-          'Implement CI/CD by using Github Actions.'
+          'Implement CI/CD by using GitHub Actions.'
         ]
       },
       {
@@ -35,8 +35,8 @@ const experiences: IExperience[] = [
         teamSize: 12,
         roles: ['Maintain system, review and assure quality of code.',
           'Implementation Event Ticketing feature.',
-          'Pick up requirement, analyze and discuss with team to finalize the expect results, and the best way to implement it.',
-          'Writing unit test and integration test for front-end and back-end. Research and sharing new technology for team.'
+          'Pick up requirements, analyze, and discuss with team to finalize the expected results and the best way to implement them.',
+          'Writing unit tests and integration tests for front-end and back-end. Research and share new technology for team.'
         ],
       }
     ]
@@ -51,9 +51,9 @@ const experiences: IExperience[] = [
         technology: 'React, Redux, SCSS, TailwindCSS',
         teamSize: 7,
         roles: [
-          'Create new components from JSX follow to Figma design.',
-          'Integrating API to components that are created and fixed bugs relevant.',
-          'Responsive for the website of company, develop and implement solutions based on requirements.'
+          'Create new components from JSX following Figma design.',
+          'Integrating API to components that are created and fixing bugs relevant.',
+          'Responsive for the website of the company, developing and implementing solutions based on requirements.'
         ]
       }
     ]
@@ -96,8 +96,8 @@ const Experience: React.FC = () => {
                                 <li className="experience__project"> <span className="font-medium"> Team-size: </span> <span className="experience__desc"> {teamSize} </span></li>
                                 <li className="experience__project">
                                   <span className="experience__project--block">
-                                    <span className="font-medium"> Roles: </span>
-                                    <ul className="" style={{ lineHeight: 2, padding: '0 0 0 30px' }}>
+                                    <span className="font-medium"> Responsibility: </span>
+                                    <ul className="leading-loose pl-8">
                                       {
                                         roles.map((role: string, idx: number) => (
                                           <li key={idx}> - {role} </li>
