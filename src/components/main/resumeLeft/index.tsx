@@ -1,4 +1,4 @@
-import { useEffect, useState, forwardRef, useLayoutEffect } from 'react';
+import { useEffect, useState, forwardRef } from 'react';
 
 import avatar from '../../../assets/avatar.jpg';
 import Certificate from '../resumeRight/certificate';
@@ -24,17 +24,20 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
     const [isDark, setIsDark] = useState(() => {
         return selectedTheme === 'dark' && getCurrentTheme
     });
+
+    console.log(isDark);
     
-    useLayoutEffect(() => {
+    useEffect(() => {
+        document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove']('dark-theme');
+        
         const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        if (isMac) {
+        const typeTheme = isMac && selectedTheme !== 'light' ? 'dark' : 'light';
+        if (isMac && selectedTheme !== 'light') {
             document.body.classList.add('dark-theme');
         }
 
-        const typeTheme = isMac ? 'dark' : 'light'
-
         if (!selectedTheme) {
-            localStorage.setItem('theme', typeTheme );
+            localStorage.setItem('theme', typeTheme);
             setIsDark(typeTheme === 'dark');
         }
     }, [])
@@ -50,8 +53,8 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF, isScale 
     }, [window.screen.width])
 
     const onToggleTheme = () => {
+        localStorage.setItem('theme', !isDark ? 'dark' : 'light');
         document.body.classList[isDark ? 'remove' : 'add']('dark-theme');
-        localStorage.setItem('theme', isDark ? 'light' : 'dark');
         setIsDark(!isDark);
     }
 
