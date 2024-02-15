@@ -75,9 +75,9 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF }, ref) =
                 </div>
 
                 <div className="home__address bd-grid">
-                    <span className="home__information">
+                    <a target='_blank' href='https://www.google.com/maps/place/Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh/@10.8423719,106.5305657,11.75z/data=!4m6!3m5!1s0x317529292e8d3dd1:0xf15f5aad773c112b!8m2!3d10.8230989!4d106.6296638!16zL20vMGhuNGg?entry=ttu' className="home__information">
                         <i className="bx bx-map home__icon"></i> Ho Chi Minh, Vietnam
-                    </span>
+                    </a>
                     <a href="mailto: dinhthanhtai.xz@gmail.com" className="home__information">
                         <i className="bx bx-envelope home__icon"/> dinhthanhtai.xz@gmail.com
                     </a>

@@ -1,64 +1,5 @@
-interface IProject {
-  name: string,
-  technology: string,
-  teamSize: number,
-  roles: string[],
-}
-
-interface IExperience {
-  company: string,
-  time: string,
-  title: string,
-  projects: IProject[],
-}
-
-const experiences: IExperience[] = [
-  {
-    company: 'KMS - Technology',
-    time: 'Dec 2021 - Present',
-    title: 'Software Engineer',
-    projects: [
-      {
-        name: 'GoodHuman Web App',
-        technology: 'React, Typescript, Redux, Ant-Design, SCSS, Blueprint',
-        teamSize: 10,
-        roles: [
-          'Review and improve code quality.',
-          'Implement form builder and integrate with feature availability.',
-          'Maintain, refactor, and improve stability and performance.',
-          'Implement CI/CD by using GitHub Actions.'
-        ]
-      },
-      {
-        name: 'Shout for Good Web App',
-        technology: 'React, Redux, SCSS, Jest, RX JS',
-        teamSize: 12,
-        roles: ['Maintain system, review and assure quality of code.',
-          'Implementation Event Ticketing feature.',
-          'Pick up requirements, analyze, and discuss with team to finalize the expected results and the best way to implement them.',
-          'Writing unit tests and integration tests for front-end and back-end. Research and share new technology for team.'
-        ],
-      }
-    ]
-  },
-  {
-    company: 'GitGam - Company',
-    time: 'Mar 2021 - Dec 2021',
-    title: 'Front-End Develop',
-    projects: [
-      {
-        name: 'Enterprise management software WebApp',
-        technology: 'React, Redux, SCSS, TailwindCSS',
-        teamSize: 7,
-        roles: [
-          'Create new components from JSX following Figma design.',
-          'Integrating API to components that are created and fixing bugs relevant.',
-          'Responsive for the website of the company, developing and implementing solutions based on requirements.'
-        ]
-      }
-    ]
-  }
-]
+import ExperienceDetail from "./experience";
+import { CompanyName, experiences } from "./experiences";
 
 const Experience: React.FC = () => {
   return (
@@ -80,34 +21,14 @@ const Experience: React.FC = () => {
                 <div className='experience__data bd-grid'>
                   <h3 className='experience__title'> {company} </h3>
                   <span className='experience__company'> {time} | <i> {title} </i> </span>
-                  <div className='experience__description'>
+                  <div className='experience__description '>
                     <ul className="experience__projects">
                       {
                         projects.map((project, index) => {
                           const { name, roles, teamSize, technology } = project;
 
                           return (
-                            <li key={name} className='mb-4'>
-                              <span className="font-bold italic">
-                                {`${index + 1}. ${name}`}
-                              </span>
-                              <ul className='pl-2 grid gap-1.5'>
-                                <li className="experience__project mt-1"> <span className="font-medium"> Technology: </span> <span className="experience__desc"> {technology} </span></li>
-                                <li className="experience__project"> <span className="font-medium"> Team-size: </span> <span className="experience__desc"> {teamSize} </span></li>
-                                <li className="experience__project">
-                                  <span className="experience__project--block">
-                                    <span className="font-medium"> Responsibility: </span>
-                                    <ul className="leading-loose pl-8">
-                                      {
-                                        roles.map((role: string, idx: number) => (
-                                          <li key={idx}> - {role} </li>
-                                        ))
-                                      }
-                                    </ul>
-                                  </span>
-                                </li>
-                              </ul>
-                            </li>
+                            <ExperienceDetail technology={technology} teamSize={teamSize} roles={roles} name={name} order={index} isOpen={company === CompanyName.VM} />
                           )
                         })
                       }

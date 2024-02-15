@@ -97,7 +97,7 @@
 
 .education__data,
 .experience__data {
-    gap: 0.5rem !important;
+    gap: 0.25rem !important;
 }
 
 .education__title {
@@ -115,6 +115,10 @@
 
 .experience__project {
     list-style: disc inside url("../../assets/arrow-right-smallest-bk.png") !important;
+}
+
+.experience__project--block li {
+    font-size: var(--small-font-size);
 }
 
 .experience__desc {
@@ -273,6 +277,10 @@ body.scale-cv {
 
     .experience__project {
         list-style: none !important;
+    }
+
+    .experience__project--block li {
+        font-size: var(--small-font-size);
     }
 
     .experience__project ul {
