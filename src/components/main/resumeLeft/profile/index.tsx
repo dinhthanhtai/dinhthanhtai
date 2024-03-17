@@ -5,7 +5,7 @@ const Profile = () => {
 
       <p className='profile__description'>
         <span>
-        - Have 2 years of experience in Web Development's
+        - Have 3+ years of experience in Web Development's
         Programming knowledge is enhanced by constant research and professional development.
         Ability to work well under stress and with short deadlines. <br />
         </span>

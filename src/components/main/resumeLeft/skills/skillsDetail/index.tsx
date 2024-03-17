@@ -6,11 +6,17 @@ interface DetailSkill {
 const DetailSkills: DetailSkill[] = [
   {
     name: 'HTML',
-    details: ['Good knowledge about HTML5, HTML Semantic.', ' Optimize SEO for the website.']
+    details: [
+      'Good knowledge about HTML5, HTML Semantic.', 
+      ' Optimize SEO for the website.'
+    ]
   },
   {
     name: 'CSS',
-    details: [' Good knowledge about CSS3, Flexbox, Grid.', 'Understand the concepts of BEM, AtomicCSS, Responsive.', 'Have experience working with Bootstrap, Tailwind CSS, Ant-Design.']
+    details: [
+      'Good knowledge about CSS3, Flexbox, Grid.', 
+      'Understand the concepts of BEM, AtomicCSS, Responsive.', 
+      'Have experience working with Bootstrap, Tailwind CSS, Ant-Design, MantineUI, DevExpress.']
   },
   {
     name: 'Javascript & Typescript',
@@ -23,15 +29,25 @@ const DetailSkills: DetailSkill[] = [
   },
   {
     name: 'React JS',
-    details: ['Have knowledge about ReactJS Basic & Advanced: HOC, React Hooks, Memoization, Testing.', 'Atomic Design Pattern.', 'Have experience building React UI Core Component, React Library.', 'React\'s Ecosystem: React Router, Redux, Storybook, NextJS...']
+    details: [
+      'Have knowledge about ReactJS Basic & Advanced: HOC, React Hooks, Memoization, Testing.', 
+      'Atomic Design Pattern.', 
+      'Have experience building React UI Core Component, React Library.', 
+      'React\'s Ecosystem: React Router, Redux, Zustand, Tanstack-Query, Storybook, NextJS...']
   },
   {
     name: 'Testing',
-    details: ['Have experience writing Unit and Integration Testing.', 'Testing\'s Ecosystem: Jest, Vitest, React Testing Library, Enzyme.']
+    details: [
+      'Have experience writing Unit and Integration Testing.', 
+      'Testing\'s Ecosystem: Jest, Vitest, React Testing Library, Enzyme.']
   },
   {
     name: 'Tools',
-    details: ['Have knowledge about configuring & optimizing Webpack, plugin.', 'Other tools: ViteJs, Figma, Bitbucket, Github, Github Action.']
+    details: [
+      'Have knowledge about configuring & optimizing Webpack, plugin.', 
+      'Other tools: ViteJs, Figma, Bitbucket, Jira, Confluence, Github, Github Action.',
+      'Have experience working with CI/CD, Docker, Nginx, AWS, K8s, Jenkins.'
+    ]
   }
 ]
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useMemo } from 'react';
-// import html2pdf from 'html2pdf-jspdf2';
+import html2pdf from 'html2pdf-jspdf2';
 
 import ResumeLeft from './resumeLeft';
 import ResumeRight from './resumeRight';
@@ -21,13 +21,13 @@ const Main: React.FC = () => {
         } 
     }, []);
 
-    // let opt = useMemo(() => ({
-    //     margin:       0,
-    //     filename:     'DINH_THANH_TAI_CV.pdf',
-    //     image:        { type: 'pdf', quality: 0.98 },
-    //     html2canvas:  { scale: 4 },
-    //     jsPDF:        { format: [250, 387], orientation: 'p' }
-    //   }),[resume]) 
+    let opt = useMemo(() => ({
+        margin:       0,
+        filename:     'DINH_THANH_TAI_CV.pdf',
+        image:        { type: 'pdf', quality: 0.98 },
+        html2canvas:  { scale: 4 },
+        jsPDF:        { format: [250, 387], orientation: 'p' }
+      }),[resume]) 
 
     const handlePrintPDF = () => {
         document.body.classList.add('scale-cv');
@@ -39,12 +39,12 @@ const Main: React.FC = () => {
         }
         , 2000);
 
-        if (generatePDF.current) {
-            generatePDF.current.href = DINH_THANH_TAI_CV;
-        }
+        // if (generatePDF.current) {
+        //     generatePDF.current.href = DINH_THANH_TAI_CV;
+        // }
 
         // export new version of pdf 
-        // html2pdf(resume, opt)
+        html2pdf(resume, opt)
     }
 
     return (

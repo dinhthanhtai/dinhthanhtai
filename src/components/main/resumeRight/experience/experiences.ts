@@ -31,6 +31,10 @@ export const experiences: IExperience[] = [
           teamSize: 7,
           roles: [
             'Research Technology and setup base source code',
+            'Apply successful module federation to project',
+            'Implement and maintain the system, review and assure quality of code.',
+            'Optimize large dataset rendering in Leaflet and Table UI: using cluster, grouping, virtualization, pagination, and lazy loading.',
+            'Lead a small team, split the job for each member, give help, code review, and solve each member\'s problem.',
           ]
         },
         {
@@ -39,6 +43,9 @@ export const experiences: IExperience[] = [
           teamSize: 6,
           roles: [
             'Research Technology and setup base source code',
+            'Implement and maintain the system, review and assure quality of code',
+            'Support gathers, evaluates, and offers solutions for the sales team\'s requirements',
+            'Building an image with Docker and deploying it to a server with K8s'
           ]
         },
         {
@@ -47,7 +54,8 @@ export const experiences: IExperience[] = [
           teamSize: 6,
           roles: [
             'Maintain system, review and assure quality of code.',
-            'Fix issues remain exist in previous version.'
+            'Fix issues remain exist in previous version.',
+            'Develop new features and improve performance of the system.',
           ]
         }
       ]
