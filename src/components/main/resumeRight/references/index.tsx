@@ -1,3 +1,5 @@
+import './index.scss';
+
 const References = () => {
     return (
         <section className='references section' id='references'>

@@ -1,0 +1,23 @@
+/* SOCIAL */
+.social {
+    &__container {
+        grid-template-columns: max-content;
+        gap: 1rem;
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+
+        &:hover {
+            color: var(--title-color);
+        }
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+        margin-right: 0.25rem;
+    }
+}

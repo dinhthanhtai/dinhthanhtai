@@ -1,4 +1,8 @@
-const Interests: React.FC = () => {
+import { FC } from 'react';
+
+import './index.scss';
+
+const Interests: FC = () => {
     return (
         <section className='interest section'>
         <h2 className='section-title'> Interest </h2>

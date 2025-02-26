@@ -1,5 +1,3 @@
-import React from 'react';
-
 interface ISkill {
     name: string;
     subSkills: string[];
@@ -16,7 +14,7 @@ const skills: ISkill[] = [
     }
 ]
 
-const Skills: React.FC = () => {
+const Skills = () => {
     return (
         <section className='skills section' id='skills'>
             <h2 className='section-title' > Skill </h2>
@@ -29,7 +27,7 @@ const Skills: React.FC = () => {
                             {
                                 value.subSkills.map(skill => (
                                     <li key={skill} className='skills__name'>
-                                        <span className='skills__circle'></span> {skill}
+                                        <span className='skills__circle'/> {skill}
                                     </li>
                                 ))
                             }

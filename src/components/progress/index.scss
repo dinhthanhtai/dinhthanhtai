@@ -1,0 +1,32 @@
+#progress {
+    height: .2rem;
+    background: rgb(204, 159, 159);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: 0 50%;
+    animation: scaleProgress auto linear, colorChange auto linear;
+    animation-timeline: scroll(root);
+}
+
+@keyframes scaleProgress {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+
+@keyframes colorChange {
+0% {
+    background-color: red;
+}
+50% {
+    background-color: yellow;
+}
+100% {
+    background-color: lime;
+}
+}
