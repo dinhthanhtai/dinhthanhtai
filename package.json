@@ -12,8 +12,10 @@
     "boxicons": "^2.1.2",
     "clsx": "^2.1.0",
     "html2pdf-jspdf2": "^0.1.2",
+    "framer-motion": "^12.4.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
