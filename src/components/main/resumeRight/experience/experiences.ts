@@ -22,7 +22,7 @@ export const CompanyName = {
 export const experiences: IExperience[] = [
     {
       company: CompanyName.VM,
-      time: 'May 2022 - present',
+      time: 'Dec 2022 - present',
       title: 'Front-end Developer',
       projects: [
         {
@@ -30,11 +30,11 @@ export const experiences: IExperience[] = [
           technology: 'ViteJS-React, TypeScript, Mantine, DevExpress, Leaflet, React-Leaflet, Tanstack-query, Zustand, UnoCSS, I18n',
           teamSize: 7,
           roles: [
-            'Research Technology and setup base source code',
+            'Research technology and setup base source code',
             'Apply successful module federation to project',
             'Implement and maintain the system, review and assure quality of code.',
             'Optimize large dataset rendering in Leaflet and Table UI: using cluster, grouping, virtualization, pagination, and lazy loading.',
-            'Lead a small team, split the job for each member, give help, code review, and solve each member\'s problem.',
+            'Lead a small team, split the tasks for each member, give help, code review, and solve each member\'s problem.',
           ]
         },
         {
@@ -62,7 +62,7 @@ export const experiences: IExperience[] = [
     },
     {
       company: CompanyName.KMS,
-      time: 'Dec 2021 - May 2022',
+      time: 'Dec 2021 - Nov 2022',
       title: 'Software Engineer',
       projects: [
         {

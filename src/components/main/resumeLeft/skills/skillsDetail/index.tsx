@@ -16,7 +16,8 @@ const DetailSkills: DetailSkill[] = [
     details: [
       'Good knowledge about CSS3, Flexbox, Grid.', 
       'Understand the concepts of BEM, AtomicCSS, Responsive.', 
-      'Have experience working with Bootstrap, Tailwind CSS, Ant-Design, MantineUI, DevExpress.']
+      'Have experience working with Bootstrap, Tailwind CSS, UnoCSs, Ant-Design, MantineUI, DevExpress.'
+    ]
   },
   {
     name: 'Javascript & Typescript',
@@ -47,6 +48,13 @@ const DetailSkills: DetailSkill[] = [
       'Have knowledge about configuring & optimizing Webpack, plugin.', 
       'Other tools: ViteJs, Figma, Bitbucket, Jira, Confluence, Github, Github Action.',
       'Have experience working with CI/CD, Docker, Nginx, AWS, K8s, Jenkins.'
+    ]
+  },
+  {
+    name: 'AWS Cloud',
+    details: [
+      'Have knowledge and experience in AWS web we services', 
+      'Services used: IAM, S3, VPC, EC2, CloudFront, ',
     ]
   }
 ]
