@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef, useMemo } from 'react';
 // import html2pdf from 'html2pdf-jspdf2';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 
+import DINH_THANH_TAI_CV from '../../assets/DINH_THANH_TAI_CV.pdf';
 import ResumeLeft from './resumeLeft';
 import ResumeRight from './resumeRight';
-import DINH_THANH_TAI_CV from '../../assets/DINH_THANH_TAI_CV.pdf';
 
 import './index.scss';
 
@@ -26,7 +26,7 @@ const Main: React.FC = () => {
     //     filename:     'DINH_THANH_TAI_CV.pdf',
     //     image:        { type: 'pdf', quality: 0.98 },
     //     html2canvas:  { scale: 4 },
-    //     jsPDF:        { format: [250, 580], orientation: 'p' }
+    //     jsPDF:        { format: [250, 600], orientation: 'p' }
     //   }),[resume]) 
 
     const handlePrintPDF = () => {
