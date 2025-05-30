@@ -1,5 +1,6 @@
-import { useEffect, useState, forwardRef } from 'react';
+import { forwardRef, useEffect, useState } from 'react';
 
+import DINH_THANH_TAI_CV from '../../../assets/DINH_THANH_TAI_CV.pdf';
 import avatar from '../../../assets/avatar.jpg';
 import Certificate from '../resumeRight/certificate';
 import Interests from '../resumeRight/interests';
@@ -60,17 +61,17 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF }, ref) =
         <section className="home" id="home">
             <div className="home__container section bd-grid">
                 <div className="home__data bd-grid">
-                    <img src={avatar} alt="Image Avatar" className="home__img"/>
+                    <img src={avatar} width={120} height={120} alt="Image Avatar" className="home__img"/>
 
                     <h1 className="home__title">
                         DINH THANH TAI
                     </h1>
-                    <h3 className="home__profession">
+                    <h2 className="home__profession">
                         Web Developer
-                    </h3>
+                    </h2>
 
                     <div>
-                        <a className="home__button-movil">Download</a>
+                        <a href={DINH_THANH_TAI_CV} download className="home__button-movil">Download</a>
                     </div>
                 </div>
 
@@ -93,7 +94,7 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF }, ref) =
                 onClick={onToggleTheme} 
                 className={`bx ${selectedTheme === 'dark' ? 'bx-sun' : 'bx-moon'} change-theme`} 
             />
-            <a ref={ref} download>
+            <a href='' ref={ref} download>
                 <i
                     id='resume-button'
                     title='Generate PDF' 
