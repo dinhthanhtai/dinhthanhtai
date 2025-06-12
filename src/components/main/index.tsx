@@ -26,7 +26,7 @@ const Main: React.FC = () => {
     //     filename:     'DINH_THANH_TAI_CV.pdf',
     //     image:        { type: 'pdf', quality: 0.98 },
     //     html2canvas:  { scale: 4 },
-    //     jsPDF:        { format: [250, 600], orientation: 'p' }
+    //     jsPDF:        { format: [250, 605], orientation: 'p' }
     //   }),[resume]) 
 
     const handlePrintPDF = () => {

@@ -40,6 +40,18 @@ export const experiences: IExperience[] = [
           ]
         },
         {
+          name: "Billing System",
+          technology: 'Vue JS, Quarsar, Chart JS, Axios, Vuex, Vue Router, XLSX',
+          teamSize: 4,
+          projectDescription: 'A web application for managing and monitoring the billing system of the company, including features such as client, customer services, documents, devices, promotions, payment management and financial reporting.',
+          roles: [
+            'Implemented and maintained the system, ensuring code quality through regular reviews',
+            'Supported the sales team and billing team by gathering, evaluating, and offering solutions for their requirements',
+            'Built source through quarsar and deployed it to a server using S3 bucket',
+            'Developed a billing system for the company, including features such as services management, payment tracking, and financial reporting by using tables and charts',
+          ]
+        },
+        {
           name: 'VM-Support 2.0',
           technology: 'ViteJS-React, TypeScript, Dev Extreme, Leaflet, React-Leaflet, TaiwindCSS, Zustand, Tanstack-query',
           teamSize: 6,
