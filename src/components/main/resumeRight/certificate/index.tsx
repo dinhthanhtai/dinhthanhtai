@@ -5,8 +5,8 @@ const Certificate: React.FC = () => {
 
             <div className='certificate__container bd-grid'>
                 <div className='certificate__content'>
-                    <a href="https://certs.duolingo.com/264133045cc158dcaeb0247b60a5e93e" target='_blank' className='certificate__title'> DET | Doulingo English Test </a>
-                    <p className='certificate__description'> MAY 30, 2022  </p>
+                    <a href="#" className='certificate__title'> DET | Doulingo English Test </a>
+                    <p className='certificate__description'> MAY 30, 2022 </p>
                 </div>
             </div>
             <div className='certificate__container bd-grid'>

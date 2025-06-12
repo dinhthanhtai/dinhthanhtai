@@ -7,11 +7,12 @@ interface ExperienceProps {
   roles: string[],
   isOpen?: boolean,
   name: string,
-  order: number
+  order: number,
+  projectDescription?: string
 }
 
 const ExperienceDetail: FC<ExperienceProps> = ({
-  technology, teamSize, roles, isOpen = false, name, order
+  technology, teamSize, roles, isOpen = false, name, order, projectDescription
 }) => {
   const [opened, setOpened] = useState(isOpen);
 
@@ -25,6 +26,7 @@ const ExperienceDetail: FC<ExperienceProps> = ({
         {`${order + 1}. ${name}`}  {chevron}
       </span>
       <ul className={classNames} style={{ transition: 'transform 2s'}}>
+        <li className="experience__project mt-1"> <span className="font-medium text-sm"> Project-Description: </span> <span className="experience__desc"> {projectDescription} </span></li>
         <li className="experience__project mt-1"> <span className="font-medium"> Technology: </span> <span className="experience__desc"> {technology} </span></li>
         <li className="experience__project"> <span className="font-medium text-sm"> Team-size: </span> <span className="experience__desc"> {teamSize} </span></li>
         <li className="experience__project">

@@ -1,6 +1,7 @@
 interface IProject {
     name: string,
     technology: string,
+    projectDescription?: string,
     teamSize: number,
     roles: string[],
   }
@@ -29,20 +30,21 @@ export const experiences: IExperience[] = [
           name: 'Fleet Management',
           technology: 'ViteJS-React, TypeScript, Mantine, DevExpress, Leaflet, React-Leaflet, Tanstack-query, Zustand, UnoCSS, I18n',
           teamSize: 7,
+          projectDescription: 'The web application for the management and monitoring of vehicle fleets includes the following features: reports, monitoring, history, user management, warnings, geofencing, point and geofencing, driver management, service subscription, and location sharing. It also offers real-time data visualization and analytics technology.',
           roles: [
-            'Research technology and setup base source code',
-            'Apply successful module federation to project',
-            'Implement and maintain the system, review and assure quality of code.',
-            'Optimize large dataset rendering in Leaflet and Table UI: using cluster, grouping, virtualization, pagination, and lazy loading.',
-            'Lead a small team, split the tasks for each member, give help, code review, and solve each member\'s problem.',
+            'Researched technologies and set up the base source code',
+            'Successfully applied Module Federation to the project',
+            'Implemented and maintained the system, ensuring code quality through regular reviews',
+            'Optimized large dataset rendering in Leaflet and Table UI using clustering, grouping, virtualization, pagination, and lazy loading',
+            'Led a small team: delegated tasks, provided support, conducted code reviews, and resolved individual issues',
           ]
         },
         {
           name: 'VM-Support 2.0',
           technology: 'ViteJS-React, TypeScript, Dev Extreme, Leaflet, React-Leaflet, TaiwindCSS, Zustand, Tanstack-query',
           teamSize: 6,
+          projectDescription: 'A web application for managing and monitoring vehicle devices support sending commands and receiving data from devices.',
           roles: [
-            'Research Technology and setup base source code',
             'Implement and maintain the system, review and assure quality of code',
             'Support gathers, evaluates, and offers solutions for the sales team\'s requirements',
             'Building an image with Docker and deploying it to a server with K8s'
@@ -52,6 +54,7 @@ export const experiences: IExperience[] = [
           name: 'Camera Monitoring',
           technology: 'ViteJS-React, TypeScript, Mantine, Antd, Zustand, Tanstack-query, UnoCSS',
           teamSize: 6,
+          projectDescription: 'A web application for monitoring and managing camera devices, providing real-time video streaming and analytics.',
           roles: [
             'Maintain system, review and assure quality of code.',
             'Fix issues remain exist in previous version.',

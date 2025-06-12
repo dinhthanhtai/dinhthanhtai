@@ -25,10 +25,10 @@ const Experience: React.FC = () => {
                     <ul className="experience__projects">
                       {
                         projects.map((project, index) => {
-                          const { name, roles, teamSize, technology } = project;
+                          const { name, roles, teamSize, technology, projectDescription } = project;
 
                           return (
-                            <ExperienceDetail technology={technology} teamSize={teamSize} roles={roles} name={name} order={index} isOpen={company === CompanyName.VM} />
+                            <ExperienceDetail projectDescription={projectDescription} technology={technology} teamSize={teamSize} roles={roles} name={name} order={index} isOpen={company === CompanyName.VM} />
                           )
                         })
                       }
