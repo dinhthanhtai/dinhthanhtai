@@ -28,27 +28,25 @@ export const experiences: IExperience[] = [
       projects: [
         {
           name: 'Fleet Management',
-          technology: 'ViteJS-React, TypeScript, Mantine, DevExpress, Leaflet, React-Leaflet, Tanstack-query, Zustand, UnoCSS, I18n',
+          technology: 'Angular 18+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
           teamSize: 7,
-          projectDescription: 'The web application for the management and monitoring of vehicle fleets includes the following features: reports, monitoring, history, user management, warnings, geofencing, point and geofencing, driver management, service subscription, and location sharing. It also offers real-time data visualization and analytics technology.',
+          projectDescription: 'The web application for the management and monitoring of vehicle fleets includes the following features: reports, monitoring, history, user management, warnings, point and geofence, driver management, service subscription, and location sharing. It also offers real-time data visualization and analytics technology.',
           roles: [
-            'Researched technologies and set up the base source code',
-            'Successfully applied Module Federation to the project',
-            'Implemented and maintained the system, ensuring code quality through regular reviews',
-            'Optimized large dataset rendering in Leaflet and Table UI using clustering, grouping, virtualization, pagination, and lazy loading',
-            'Led a small team: delegated tasks, provided support, conducted code reviews, and resolved individual issues',
+            'Researched and evaluated emerging technologies, architected and established the foundational codebase',
+            'Implemented, maintained, and enhanced system stability while enforcing code quality standards through comprehensive code reviews',
+            'Optimized large dataset rendering performance in Leaflet and Table UI through clustering, virtualization, pagination, and lazy loading techniques',
+            'Led technical team initiatives: delegated responsibilities, mentored team members, conducted thorough code reviews, and resolved technical blockers',
           ]
         },
         {
           name: "Billing System",
-          technology: 'Vue JS, Quarsar, Chart JS, Axios, Vuex, Vue Router, XLSX',
+          technology: 'Angular 18+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
           teamSize: 4,
           projectDescription: 'A web application for managing and monitoring the billing system of the company, including features such as client, customer services, documents, devices, promotions, payment management and financial reporting.',
           roles: [
-            'Implemented and maintained the system, ensuring code quality through regular reviews',
-            'Supported the sales team and billing team by gathering, evaluating, and offering solutions for their requirements',
-            'Built source through quarsar and deployed it to a server using S3 bucket',
-            'Developed a billing system for the company, including features such as services management, payment tracking, and financial reporting by using tables and charts',
+            'Architected and maintained robust billing system with comprehensive code reviews to ensure code quality and best practices',
+            'Collaborated cross-functionally with sales and billing teams to gather requirements, analyze pain points, and deliver tailored solutions',
+            'Engineered advanced financial features including service management, payment tracking, and real-time reporting using data visualization components',
           ]
         },
         {
@@ -57,9 +55,9 @@ export const experiences: IExperience[] = [
           teamSize: 6,
           projectDescription: 'A web application for managing and monitoring vehicle devices support sending commands and receiving data from devices.',
           roles: [
-            'Implement and maintain the system, review and assure quality of code',
-            'Support gathers, evaluates, and offers solutions for the sales team\'s requirements',
-            'Building an image with Docker and deploying it to a server with K8s'
+            'Implemented and maintained system features while conducting thorough code reviews to ensure code quality and best practices',
+            'Collaborated with sales team to gather requirements, evaluate technical feasibility, and deliver customized solutions',
+            'Containerized applications using Docker and deployed to production environments using Kubernetes orchestration'
           ]
         },
         {
@@ -68,9 +66,9 @@ export const experiences: IExperience[] = [
           teamSize: 6,
           projectDescription: 'A web application for monitoring and managing camera devices, providing real-time video streaming and analytics.',
           roles: [
-            'Maintain system, review and assure quality of code.',
-            'Fix issues remain exist in previous version.',
-            'Develop new features and improve performance of the system.',
+            'Maintained system stability and ensured code quality through comprehensive reviews and testing.',
+            'Identified, diagnosed, and resolved existing issues from previous releases to enhance system reliability.',
+            'Developed new features and optimized system performance to improve user experience and operational efficiency.',
           ]
         }
       ]

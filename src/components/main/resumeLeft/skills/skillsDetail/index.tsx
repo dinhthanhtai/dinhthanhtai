@@ -30,12 +30,14 @@ const DetailSkills: DetailSkill[] = [
     ]
   },
   {
-    name: 'React JS',
+    name: 'Angular',
     details: [
-      'Have knowledge about ReactJS Basic & Advanced: HOC, React Hooks, Memoization, Testing.', 
-      'Atomic Design Pattern.', 
-      'Have experience building React UI Core Component, React Library.', 
-      'React\'s Ecosystem: React Router, Redux, Zustand, Tanstack-Query, Storybook, NextJS...']
+      'Expertise in Angular Core: Components, Directives, Services, Dependency Injection, RxJS, Signals, Change Detection Optimization.', 
+      'Advanced patterns: Atomic Design, Smart/Presentation Components, State Management.', 
+      'Experience building reusable Angular Component Libraries, Shared UI Kits, and Custom Directives.',
+      'Angular Ecosystem: Angular Router (lazy loading, preloading, guards), NgRx, standalone components, signals.',
+      'Performance optimization: OnPush change detection, trackBy, lazy loading, code splitting, bundle optimization.',
+      'Testing expertise: Karma, Jasmine, Jest, TestBed for unit and integration testing.']
   },
   {
     name: 'Testing',
