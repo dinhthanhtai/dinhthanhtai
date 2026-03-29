@@ -1,5 +1,5 @@
 ### Hi there 👋
-- This is my cv online: https://dinhthanhtai.cf
+- Scan my cv: https://dinhthanhtai.me
 
 ![](https://komarev.com/ghpvc/?username=dinhthanhtai&color=green)
 ![](https://komarev.com/ghpvc/?username=dinhthanhtai&style=flat-square)
