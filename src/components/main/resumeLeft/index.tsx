@@ -67,7 +67,7 @@ const ResumeLeft = forwardRef<HTMLAnchorElement, IProps>(({ onPrintPDF }, ref) =
                         DINH THANH TAI
                     </h1>
                     <h2 className="home__profession">
-                        Web Developer
+                        Software Engineer
                     </h2>
 
                     <div>
