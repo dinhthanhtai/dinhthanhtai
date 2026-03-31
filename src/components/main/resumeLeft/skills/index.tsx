@@ -10,7 +10,7 @@ const skills: ISkill[] = [
     },
     {
         name: 'Back -End',
-        subSkills: ['Node JS (basic)', 'Ruby (basic)', 'Go (In progress)']
+        subSkills: ['Node JS', 'Ruby (basic)', 'Go', 'Dotnet']
     }
 ]
 

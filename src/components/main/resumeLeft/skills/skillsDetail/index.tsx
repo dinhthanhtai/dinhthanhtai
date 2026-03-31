@@ -29,16 +29,15 @@ const DetailSkills: DetailSkill[] = [
       'Understand and experience in Reactive Programming with RxJS'
     ]
   },
-  // {
-  //   name: 'Angular',
-  //   details: [
-  //     'Expertise in Angular Core: Components, Directives, Services, Dependency Injection, RxJS, Signals, Change Detection Optimization.', 
-  //     'Advanced patterns: Atomic Design, Smart/Presentation Components, State Management.', 
-  //     'Experience building reusable Angular Component Libraries, Shared UI Kits, and Custom Directives.',
-  //     'Angular Ecosystem: Angular Router (lazy loading, preloading, guards), NgRx, standalone components, signals.',
-  //     'Performance optimization: OnPush change detection, trackBy, lazy loading, code splitting, bundle optimization.',
-  //     'Testing expertise: Karma, Jasmine, Jest, TestBed for unit and integration testing.']
-  // },
+  {
+    name: 'Angular',
+    details: [
+      'Experience in Angular Core: Components, Directives, Services, Dependency Injection, RxJS, Signals, Change Detection Optimization.', 
+      'Experience building reusable Angular Component Libraries, Shared UI Kits, and Custom Directives.',
+      'Angular Ecosystem: Angular Router (lazy loading, preloading, guards), NgRx, standalone components, signals.',
+      'Performance optimization: OnPush change detection, trackBy, lazy loading, code splitting, bundle optimization.',
+      ]
+  },
   {
     name: 'React JS',
     details: [
