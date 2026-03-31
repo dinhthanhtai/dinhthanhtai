@@ -16,7 +16,7 @@ const ExperienceDetail: FC<ExperienceProps> = ({
 }) => {
   const [opened, setOpened] = useState(isOpen);
 
-  const classNames = clsx('pl-2 grid gap-1 transition-all duration-300 scale-y-1', !opened && '!scale-y-0 h-0 overflow-hidden')
+  const classNames = clsx('pl-2 grid gap-1 transition-all duration-300', !opened && 'translate-x-full h-0 overflow-hidden')
 
   const chevron = <i className={`bx bx-chevron-${opened ? 'up' : 'down'} text-xl`}></i>
 
@@ -25,22 +25,30 @@ const ExperienceDetail: FC<ExperienceProps> = ({
       <span className="font-bold italic cursor-pointer flex items-center gap-1" onClick={() => setOpened(!opened)}>
         {`${order + 1}. ${name}`}  {chevron}
       </span>
-      <ul className={classNames} style={{ transition: 'transform 2s'}}>
-        <li className="experience__project mt-1"> <span className="font-medium text-sm"> Project-Description: </span> <span className="experience__desc"> {projectDescription} </span></li>
+      <ul className={classNames} style={{ transition: 'transform .4s'}}>
+        {
+          projectDescription && (
+            <li className="experience__project mt-1"> <span className="font-medium text-sm"> Project-Description: </span> <span className="experience__desc"> {projectDescription} </span></li>
+          )
+        }
         <li className="experience__project mt-1"> <span className="font-medium"> Technology: </span> <span className="experience__desc"> {technology} </span></li>
         <li className="experience__project"> <span className="font-medium text-sm"> Team-size: </span> <span className="experience__desc"> {teamSize} </span></li>
-        <li className="experience__project">
-          <span className="experience__project--block">
-            <span className="font-medium text-sm"> Responsibility: </span>
-            <ul className="leading-loose pl-8">
-              {
-                roles.map((role: string, idx: number) => (
-                  <li key={idx}> - {role} </li>
-                ))
-              }
-            </ul>
-          </span>
-        </li>
+        {
+          roles.length !== 0 && (
+            <li className="experience__project">
+              <span className="experience__project--block">
+                <span className="font-medium text-sm"> Responsibility: </span>
+                <ul className="leading-loose pl-8">
+                  {
+                    roles.map((role: string, idx: number) => (
+                      <li key={idx}> - {role} </li>
+                    ))
+                  }
+                </ul>
+              </span>
+            </li>
+          )
+        }
       </ul>
     </li>
 

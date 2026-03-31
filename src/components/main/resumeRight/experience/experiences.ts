@@ -24,29 +24,29 @@ export const experiences: IExperience[] = [
     {
       company: CompanyName.VM,
       time: 'Dec 2022 - present',
-      title: 'Front-end Developer',
+      title: 'Software Engineer',
       projects: [
         {
           name: 'Fleet Management',
-          technology: 'Angular 18+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
+          technology: 'Angular 20+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
           teamSize: 7,
           projectDescription: 'The web application for the management and monitoring of vehicle fleets includes the following features: reports, monitoring, history, user management, warnings, point and geofence, driver management, service subscription, and location sharing. It also offers real-time data visualization and analytics technology.',
           roles: [
-            'Researched and evaluated emerging technologies, architected and established the foundational codebase',
-            'Implemented, maintained, and enhanced system stability while enforcing code quality standards through comprehensive code reviews',
-            'Optimized large dataset rendering performance in Leaflet and Table UI through clustering, virtualization, pagination, and lazy loading techniques',
-            'Led technical team initiatives: delegated responsibilities, mentored team members, conducted thorough code reviews, and resolved technical blockers',
+            'Researched and evaluated emerging technologies, architected and established the foundational codebase.',
+            'Implemented, maintained, and enhanced system stability while enforcing code quality standards through comprehensive code reviews.',
+            'Optimized large dataset rendering performance in Leaflet and Table UI through clustering, virtualization, pagination, and lazy loading techniques.',
+            'Led technical team initiatives: delegated responsibilities, mentored team members, conducted thorough code reviews, and resolved technical blockers.',
           ]
         },
         {
           name: "Billing System",
-          technology: 'Angular 18+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
+          technology: 'Angular 20+, TypeScript, PrimeNg, DevExpress, Leaflet, RxJs, Tailwind, Ngx-translate, NGX-ECHARTS',
           teamSize: 4,
           projectDescription: 'A web application for managing and monitoring the billing system of the company, including features such as client, customer services, documents, devices, promotions, payment management and financial reporting.',
           roles: [
-            'Architected and maintained robust billing system with comprehensive code reviews to ensure code quality and best practices',
-            'Collaborated cross-functionally with sales and billing teams to gather requirements, analyze pain points, and deliver tailored solutions',
-            'Engineered advanced financial features including service management, payment tracking, and real-time reporting using data visualization components',
+            'Architected and maintained robust billing system with comprehensive code reviews to ensure code quality and best practices.',
+            'Collaborated cross-functionally with sales and billing teams to gather requirements, analyze pain points, and deliver tailored solutions.',
+            'Engineered advanced financial features including service management, payment tracking, and real-time reporting using data visualization components.',
           ]
         },
         {
@@ -55,9 +55,9 @@ export const experiences: IExperience[] = [
           teamSize: 6,
           projectDescription: 'A web application for managing and monitoring vehicle devices support sending commands and receiving data from devices.',
           roles: [
-            'Implemented and maintained system features while conducting thorough code reviews to ensure code quality and best practices',
-            'Collaborated with sales team to gather requirements, evaluate technical feasibility, and deliver customized solutions',
-            'Containerized applications using Docker and deployed to production environments using Kubernetes orchestration'
+            'Implemented and maintained system features while conducting thorough code reviews to ensure code quality and best practices.',
+            'Collaborated with sales team to gather requirements, evaluate technical feasibility, and deliver customized solutions.',
+            'Containerized applications using Docker and deployed to production environments using Kubernetes orchestration.'
           ]
         },
         {
@@ -82,23 +82,13 @@ export const experiences: IExperience[] = [
           name: 'GoodHuman Web App',
           technology: 'React, Typescript, Redux, Ant-Design, SCSS, Blueprint',
           teamSize: 10,
-          roles: [
-            'Review and improve code quality.',
-            'Implement form builder and integrate with feature availability.',
-            'Maintain, refactor, and improve stability and performance.',
-            'Implement CI/CD by using GitHub Actions.'
-          ]
+          roles: []
         },
         {
           name: 'Shout for Good Web App',
           technology: 'React, Redux, SCSS, Jest, RX JS',
           teamSize: 12,
-          roles: [
-            'Maintain system, review and assure quality of code.',
-            'Implementation Event Ticketing feature.',
-            'Pick up requirements, analyze, and discuss with team to finalize the expected results and the best way to implement them.',
-            'Writing unit tests and integration tests for front-end and back-end. Research and share new technology for team.'
-          ],
+          roles: [],
         }
       ]
     },
@@ -111,11 +101,7 @@ export const experiences: IExperience[] = [
           name: 'Enterprise management software WebApp',
           technology: 'React, Redux, SCSS, TailwindCSS',
           teamSize: 7,
-          roles: [
-            'Create new components from JSX following Figma design.',
-            'Integrating API to components that are created and fixing bugs relevant.',
-            'Responsive for the website of the company, developing and implementing solutions based on requirements.'
-          ]
+          roles: []
         }
       ]
     }
